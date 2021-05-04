@@ -11,17 +11,17 @@ const fs = require('fs')
 const server = http.createServer((req, res) => {
     // console.log(req)
 
-    if(req.url === '/' && req.method === 'GET'){
-        //add a content type
-        res.writeHead(200, { 'Content-Type':'text/html'})
-        res.write('<html>')
-        res.write('<head><title>Home page</title></head>')
-        res.write('<body>')
-        res.write('<h1>HOLA</h1>')
-        res.write('</body>')
-        res.write('</html>')
-        res.end()
-    }
+    // if(req.url === '/' && req.method === 'GET'){
+    //     //add a content type
+    //     res.writeHead(200, { 'Content-Type':'text/html'})
+    //     res.write('<html>')
+    //     res.write('<head><title>Home page</title></head>')
+    //     res.write('<body>')
+    //     res.write('<h1>HOLA</h1>')
+    //     res.write('</body>')
+    //     res.write('</html>')
+    //     res.end()
+    // }
 
     if(req.url === '/contact' && req.method === 'POST'){
         //execute your parsing of data from form
